@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Paytone+One&display=swap');
+
+body{
+margin: 0;
+  padding: 0;
+  background-color: rgb(220, 220, 220);
+  font-family: poppins, sans-serif;
+}
+
+.mains{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+  padding: 5px;
+  width: 700px;
+  height: 250px;
+}
+a{
+    color:rgb(186, 186, 186);
+    text-decoration: none;
+    font-style: italic;
+    letter-spacing: -2px;
+}
+a:hover{
+    transform: scale(1.05);
+    color:rgb(255, 255, 255);
+    font-size: 52px;
+    font-weight: bolder;
+    font-style: normal;
+}
+.text{
+    width: 950px;
+    height: 200px;
+    margin: auto;
+    padding: 200px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+}
+.border{
+    border: 3px;
+    border-color: white;
+    border-style: dotted;
+    border-radius: 120px;
+    padding: 20px;
+    animation: blink 0.3 infinite;
+}
+.mainsimages{
+  width: 600px;
+  height: 450px;
+  background: #000;
+  margin: auto;
+  animation: "slideUp" 1.5s;
+  visibility: hidden;
+  border-radius: 40px;
+}
+.otherimages{
+    width: 600px;
+  height: 450px;
+  margin: auto;
+  padding: 10px;
+}
+#coverimage{
+    position: relative;
+    padding: 30px;
+}
+.mainsimages:hover{
+    transform: scale(1);
+}
+.hover{
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.hover:hover{
+    transform: scale(1.05);
+    filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+#image1{
+    position: relative;
+    margin-right: -150px;
+}
+#image2{
+    position: relative;
+    margin-top: -25px;
+    margin-left: 150px;
+}
+#image3{
+    position: relative;
+    margin-top: -25px;
+    margin-left: -150px;  
+}
+#name{
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 15px;
+    margin: 20px;
+    margin-top: 20px;
+    font-size: 120px;
+    line-height: 100px;
+}
+
+h1{
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 15px;
+    margin: 20px;
+    margin-top: 20px;
+    font-size: 80px;
+    line-height: 100px;
+}
+#caption{
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    font-weight: light;
+    letter-spacing: 2px;
+    font-size: 50px;
+    line-height: 50px;
+    margin: auto;
+}
+h2{
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    font-weight: light;
+    letter-spacing: 2px;
+    font-size: 30px;
+    line-height: 30px;
+    margin: auto;
+    color: white;
+    padding: 10px;
+}
+h3{
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    font-weight: light;
+    letter-spacing: 5px;
+    font-size: 15px;
+    line-height: 30px;
+    margin: auto;
+    color: white;
+    padding: 10px;
+}
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: 3s;
+    visibility: visible;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      tranform: scale(0.7);
+    }
+  
+    100% {
+      opacity: 1;
+      tranform: scale(1);
+    }
+  }
+
+.centerimages{
+    text-align: center;
+    margin-top: 600px;
+}
+
+button{
+    background:rgb(158, 158, 158);
+    padding: 10px;
+    border: none;
+    margin: auto;
+    font-family: futura;
+    color: white;
+    font-size: 30px;
+}
+button:hover{
+    background:rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    margin: auto;
+    font-family: futura;
+    color: rgb(204, 204, 204);
+    font-size: 30px;
+}
+#arrow{
+    animation: blink 0.3s infinite;
+    padding: 10px;
+    font-size: 80px;
+    margin: auto;
+    margin-top: 40px;
+
+}
+@keyframes blink {
+    0%{ opacity: 0;
+        color:rgb(158, 158, 158);
+    }
+    100%{ opacity: 1;
+        color:rgb(255, 255, 255);
+    }
+}
