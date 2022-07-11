@@ -17,12 +17,24 @@
     height: 900px;
   }
 
+  .footer{
+    background-color: white;
+    color: rgb(103, 103, 103);
+    margin-top: 20px;
+  }
+
   h1{
     font-family: 'Paytone One', sans-serif;
     font-weight: bold;
     letter-spacing: 15px;
     font-size: 10vw;
     margin-bottom: -20px;
+    color: white;
+    text-align: center;
+  }
+
+  #projects{
+    font-size: 5vw;
   }
   p{
     font-family: 'Alata', sans-serif;
@@ -41,6 +53,7 @@
     text-decoration: none;
     font-style: italic;
     letter-spacing: -2px;
+    margin: auto;
 }
 a:hover{
     transform: scale(1.05);
@@ -50,8 +63,9 @@ a:hover{
     font-style: normal;
 }
 
-#headertext{
-
+h1:hover{
+    text-shadow: 7px 7px 0px #b7b7b7;
+    transition: 0.5s;
   }
   .row {  
     display: flex;
@@ -69,15 +83,58 @@ a:hover{
   }
   
   .img{
-    background-color: #aaa;
-    width: 50%;
-    height: 90%;
+    background-color: rgb(255, 255, 255);
+    width:700px;
+    height: 400px;
     margin: auto;
     padding: 20px;
     margin-top: 10px;
+    animation: "slideUp" 1.5s;
+    position: relative;
+    text-align: center;
+    border: none;
   }
-.img.hover{
-  transform: scale(1);
+
+  .images{
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .images1{
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+  .images1:hover{
+    background-color: #bfbfbf;
+    transition: 0.5s;
+    padding: 0%;
+
+  }
+
+  .slideUp {
+    animation-name: slideUp;
+    animation-duration: 3s;
+    visibility: visible;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      tranform: scale(0.7);
+    }
+  
+    100% {
+      opacity: 1;
+      tranform: scale(1);
+    }
+  }
+
+.img:hover{
+  transform: scale(1.03);
+  transition: 0.1s;
+  border-radius: 30px;
   }
   
   .footer {
@@ -144,9 +201,6 @@ h4{
 }
 
   @media screen and (max-width: 700px) {
-    .row, .navbar {   
-      flex-direction: column;
-    }
     h1{
         font-size: 12vw;
         letter-spacing: 5px;
@@ -161,8 +215,37 @@ h4{
     body{
         background-color: black;
     }
+    h4{
+      font-size: 10vw;
+      width: 300px;
+    }
+    .img{
+      width:500px;
+    height: 300px;
+    }
   }
   #img1{
-    background-image: url('/Users/blezzeu/Desktop/myportfolio/final images/chavacano1.jpg');
-      background-color: #aaa;
+    background-image: url("/Users/blezzeu/Desktop/myportfolio/final images/chavacano4.png")
+    
     }
+
+#banner{
+      color: black;
+      background:yellow; 
+      padding:10px; 
+      text-align: center;
+
+    }
+#banner:hover{
+      background: rgb(255, 255, 207); 
+    }
+.footera{
+  color: black;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.footera:hover{
+  transform: scale(1.03);
+  color: black;
+  font-size: 1vw;
+}
