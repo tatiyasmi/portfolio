@@ -106,6 +106,16 @@ h1:hover{
     margin-top: 40px;
     width: 100%;
   }
+
+  .images2{
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    width: 50%;
+  }
+
+ 
+
   .images1:hover{
     background-color: #bfbfbf;
     transition: 0.5s;
