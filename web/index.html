@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tati's Works</title>
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="banner">
+  <a class="footera" href="https://www.instagram.com/xaxiana/">SEE MORE WORKS HERE</a>
+</div>
+
+<div class="header">
+    <div id="headertext">
+  <h1>TATI YASMI</h1>
+  <p> I am a Filipino-American Junior Communication Design Student from Manila studying in New York City. I am always either designing, <a href="art.html">creating art</a>, <a href="film.html">editing  videos</a>, <a href="photos.html">taking photos</a>, <a href="garments.html">sewing</a>, <a href="">playing the piano</a>, putting on SFX <a href="makeup.html">makeup</a>, or drinking coffee.</p>
+  <h2 id="arrow">⬇</h2>
+        <h3 font-size="10px" margin="10px">WORKS</h3>
+</div>
+</div>
+
+<div class="row">
+  <div class="main">
+    <div class="images1" style="width: 100%">
+    <h2>CHAVACANO WIKIBOOK</h2>
+    <a href="project1.html"><img class="img" style="width:600px" src="final images/final final/chavacano3 copy.jpg"></a>
+    <h4 style="font-size: 1vw;width: 50%;">A Wikipedia page about the dying dialect of Chavacano translated into a book.</h4>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="images1" style="width: 100%">
+    <h2>MANTRA ANIMATION</h2>
+    <a class="images" href=""><img class="img" style="width:700px" loop=infinite src="final images/mantra.gif"></a>
+    <h4 style="font-size: 1vw;width: 50%;"> Text animation exploration. </h4>
+    </div>
+  </div>
+  <br>
+    <br>
+    <br>
+    <br>
+  <div class="images1">
+    <h2>DLSZ FAIR SHIRT COMPETITION</h2>
+    <a href="project3.html"><img class="img" style="width:500px" src="final images/fairshirt.jpg"></a>
+    <h4 style="font-size: 1vw;width: 60%;">A T-Shirt design for all faculty and students to wear at De La Salle Santiago Zobel School.</h4>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="images1">
+      <h2>OCEAN INFO</h2>
+    <a href=""><img class="img" style="width:400px" src="final images/oceaninfograph.gif"></a>
+    <h4 style="font-size: 1vw;width: 50%;">  </h4>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="images1">
+    <h2>TYPOGRAPHY, IDENTITY, GRAPHOLOGY BOOK</h2>
+    <a href="project4.html"><img class="img" style="width:600px"src="final images/graphology cover.png"></a>
+    <h4 style="font-size: 1vw;width: 50%;">An exploration over the relation between typography, identity, and the science of graphology.</h4>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="images1">
+      <h2>LUSTRA MERCH</h2>
+      <a class="images" href="project5.html"><img class="img" style="width:400px"loop="infinite" src="final images/lustra merch.gif"></a>
+      <h4 style="font-size: 1vw;width: 50%;">My designs as the Media Head of the organization LSYC.</h4>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
+</div>
+
+<div class="footer">
+  <h2 class="footertext" style="color:black">xaxiana</h2> <br></br>
+  <a class="footera" href="https://www.instagram.com/xaxiana/">INSTAGRAM</a> 
+  <a class="footera" href="https://www.tiktok.com/@xaxiana">TIKTOK</a>  <br></br>
+  <a class="footera" href="https://drive.google.com/file/d/18yXJ6lDgiPjqzwiX6CDm8K0mOtomSGDe/view?usp=sharing">PDF PORTFOLIO</a> <br></br>
+  <a class="footera" href="https://www.instagram.com/xaxiana/">RESUME</a>
+  <br>
+  <br>
+  <br>
+</div>
+
+<script>function images1() {
+  var reveals = document.querySelectorAll(".images1")
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);</script>
+
+</body>
+</html>
