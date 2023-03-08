@@ -87,7 +87,7 @@ h1:hover{
     width:700px;
     height: 400px;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
     margin-top: 10px;
     animation: "slideUp" 1.5s;
     position: relative;
